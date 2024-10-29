@@ -27,8 +27,8 @@ get_header('shop');
 			<div class="col-md-9 ftco-animate text-center">
 				<?php if (apply_filters('woocommerce_show_page_title', true)) { ?>
 					<h1 class="mb-0 bread"><?php woocommerce_page_title(); ?></h1>
+	
 				<?php } ?>
-				<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Product</span></p>
 				<?php woocommerce_breadcrumb(); ?>
 				
 			</div>
@@ -58,14 +58,6 @@ do_action('woocommerce_shop_loop_header');
 
 if (woocommerce_product_loop()) {
 
-	/**
-	 * Hook: woocommerce_before_shop_loop.
-	 *
-	 * @hooked woocommerce_output_all_notices - 10
-	 * @hooked woocommerce_result_count - 20
-	 * @hooked woocommerce_catalog_ordering - 30
-	 */
-	do_action('woocommerce_before_shop_loop');
 
 	woocommerce_product_loop_start();
 
@@ -81,15 +73,8 @@ if (woocommerce_product_loop()) {
 			wc_get_template_part('content', 'product');
 		}
 	}
-
 	woocommerce_product_loop_end();
 
-	/**
-	 * Hook: woocommerce_after_shop_loop.
-	 *
-	 * @hooked woocommerce_pagination - 10
-	 */
-	do_action('woocommerce_after_shop_loop');
 } else {
 	/**
 	 * Hook: woocommerce_no_products_found.

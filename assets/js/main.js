@@ -133,6 +133,48 @@
 	  console.log('show');
 	});
 
+
+
+	$(document).ready(function(){
+
+		var quantitiy=0;
+		   $('.quantity-right-plus').click(function(e){
+		        
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('.input-numbertext').val());
+		        
+		        // If is not undefined
+		            
+		            $('.input-numbertext').val(quantity + 1);
+
+		          
+		            // Increment
+		        
+		    });
+
+		     $('.quantity-left-minus').click(function(e){
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('.input-numbertext').val());
+		        
+		        // If is not undefined
+		      
+		            // Increment
+		            if(quantity>1){
+		            $('.input-numbertext').val(quantity - 1);
+		            }
+		    });
+		    
+		});
+
+
+
+
+
+
 	// scroll
 	var scrollWindow = function() {
 		$(window).scroll(function(){
