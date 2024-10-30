@@ -13160,7 +13160,9 @@ textarea.form-control {
   font-weight: 600;
 }
 
-
+/* .variations_form .price{
+  display: none;
+} */
 
 .product .price>span:first-child,
 .product .price>span:first-child .woocommerce-Price-currencySymbol {
