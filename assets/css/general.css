@@ -13154,27 +13154,20 @@ textarea.form-control {
 
 
 /* product */
-.product .price {
+.productPrice {
   font-size: 33px !important;
   color: #000 !important;
   font-weight: 600;
 }
 
-/* .variations_form .price{
-  display: none;
-} */
 
-.product .price>span:first-child,
-.product .price>span:first-child .woocommerce-Price-currencySymbol {
+.product .productPrice>span:first-child,
+.product .productPrice>span:first-child .woocommerce-Price-currencySymbol {
   text-decoration: line-through;
   color: #b3b3b3;
   font-weight: 400;
-  font-size: 30px;
 
 }
-
-
-
 
 
 .woocommerce div.product .summary del {
@@ -13195,6 +13188,16 @@ textarea.form-control {
 }
 
 
+
+
+
+/* form price */
+.woocommerce-variation-price .woocommerce-Price-amount {
+  font-size: 20px !important;
+}
+.woocommerce-variation-price .woocommerce-Price-currencySymbol{
+  font-size: 20px !important;
+}
 .woocommerce div.product .summary ins {
   margin-left: 30px;
   position: relative;
@@ -13208,12 +13211,9 @@ textarea.form-control {
   left: -23px;
   width: 20px;
   height: 4px;
-  top: -7px;
+  top: -18px;
   color: black;
 }
-
-
-
 
 
 
@@ -13230,6 +13230,8 @@ textarea.form-control {
 .woocommerce div.product form.cart {
   padding-top: 1em;
 }
+
+
 
 
 
@@ -13335,3 +13337,13 @@ textarea.form-control {
 .single-product .product{
   width: 100%;
 }
+.woocommerce-variation-priceSize{
+  font-size: 16px !important; 
+  color: red !important;
+  margin-right: 10px;
+}
+
+
+
+
+

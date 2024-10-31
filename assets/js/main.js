@@ -39,10 +39,12 @@ AOS.init({
 	});
 
 
+
+
 /* 	const productPrice = () => {
 		const productCards = document.querySelectorAll('.single-product');
-		const priceElement = document.querySelector('.woocommerce-variation-price .price');
-
+		const priceElement = document.querySelectorAll('.custom-price-class');
+		console.log(priceElement)
 
 		productCards.forEach(card => {
 			const priceProduct = card.querySelector('.price');
@@ -51,19 +53,20 @@ AOS.init({
 
 
 			input.addEventListener('click', () => {
-		
+				console.log(priceElement)
 				if (input.value) {
 					priceProduct.style.display = 'none';
 				}
 			});
 				if (input.value) {
 					priceProduct.style.display = 'none';
+					console.log(priceElement)
 				}
 
 		});
 	}
+	productPrice();  */
 
-	productPrice(); */
 
 
 
@@ -380,7 +383,7 @@ AOS.init({
 	};
 	goHere();
 
-
+	
 
 })(jQuery);
 
